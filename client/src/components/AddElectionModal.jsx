@@ -42,12 +42,16 @@ const AddElectionModal = () => {
                 }
             });
             closeModal()
-            navigate(0);
+
+        navigate("/elections");
+        window.location.reload();
+            
         }catch(error){
             console.log(error);
         }
         finally {
         setIsLoading(false); // hide loader
+        
         }
     }
 
