@@ -11,7 +11,7 @@ const {notFound, errorHandler } = require("./middleware/errorMiddleware")
 const app = express()
 app.use(express.json({extended: true}))
 app.use(express.urlencoded({extended: true}))
-app.use(cors({credentials: true, origin: ["http://localhost:3000"]}))
+app.use(cors({credentials: true, origin: ["http://localhost:3000" , "https://ballotbox-frontend.onrender.com"]}))
 app.use(upload())
 
 
@@ -34,6 +34,11 @@ app.use(notFound)
 app.use(errorHandler)
 
 connect(process.env.MONGO_URL).then(app.listen(process.env.PORT, () => console.log(`server started at port ${process.env.PORT}`))).catch(err => console.log(err))
+
+app.get("/", (req, res) => {
+  res.send("API is running 🟢");
+});
+
 
 
 
