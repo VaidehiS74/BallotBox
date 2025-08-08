@@ -58,5 +58,5 @@ BallotBox/
 🙋‍♀️ Author
 Vaidehi Singh
 ---
-🔗 GitHub(https://github.com/VaidehiS74)
-🔗 LinkedIn(https://www.linkedin.com/in/vaidehi-singh2004/)
+-🔗 [GitHub](https://github.com/VaidehiS74)
+-🔗 [LinkedIn](https://www.linkedin.com/in/vaidehi-singh2004/)
